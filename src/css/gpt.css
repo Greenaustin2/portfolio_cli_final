@@ -1,0 +1,51 @@
+body {
+  background-color: #212121;
+}
+
+.command-interface {
+  font-family: "Menlo", sans-serif;
+  font-size: 0.8rem;
+  padding: 20px;
+  background-color: #212121;
+  color: white;
+}
+
+.command-interface__prompt {
+  color: green;
+  margin-right: 5px;
+}
+
+.command-interface__input {
+  font-family: "Menlo", sans-serif;
+  font-size: 0.8rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.command-interface__submit {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  /* cursor: pointer; */
+}
+
+.command-interface__output-label {
+  margin-right: 5px;
+}
+
+.command-interface__history-label {
+  margin-right: 5px;
+}
+
+.command-interface__clear {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  /* cursor: pointer; */
+}

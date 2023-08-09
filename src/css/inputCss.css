@@ -1,0 +1,22 @@
+input[type="text"] {
+  border: none;
+  caret-shape: block;
+  font-family: "Menlo", sans-serif;
+  font-size: 0.75rem;
+  padding: 0px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  caret-shape: block;
+  font-family: "Menlo", sans-serif;
+  font-size: 0.75rem;
+  padding: 0px;
+}
+
+pre {
+  font-family: "Menlo", sans-serif;
+  font-size: 0.75rem;
+  margin: 0px 0px 0px 0px;
+  line-height: 20px;
+}

@@ -1,0 +1,17 @@
+h1 {
+  margin-left: 20px;
+}
+
+.header {
+  white-space: pre;
+  font-family: monospace;
+  color: #f1c500;
+  width: 20%;
+  height: 20%;
+}
+
+p {
+  font-family: "Menlo", sans-serif;
+  color: white;
+  font-size: 0.75rem;
+}

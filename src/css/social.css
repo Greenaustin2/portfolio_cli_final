@@ -1,0 +1,25 @@
+.socialIcon {
+  font-size: 100px;
+  padding: 40px;
+}
+
+.socialImage {
+  width: 70px;
+  height: 70px;
+  padding: 40px;
+}
+
+.socialContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.socialIcon:hover {
+  filter: brightness(100%) sepia(100%) saturate(10000%);
+}
+
+.socialImage:hover {
+  filter: brightness(90%) sepia(36%) saturate(10800%);
+}

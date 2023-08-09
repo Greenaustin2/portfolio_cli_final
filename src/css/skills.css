@@ -1,0 +1,11 @@
+.skillIcon {
+  font-size: 70px;
+  padding: 40px;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+}
