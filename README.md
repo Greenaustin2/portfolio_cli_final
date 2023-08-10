@@ -2,7 +2,7 @@
 
 ## About
 
-A web application modeled after a CLI to present my web developement portfolio to future employers.
+A web application modeled after a CLI to present my web developement portfolio.
 
 ![Sample images]()
 
