@@ -2,19 +2,20 @@
 
 ## About
 
-A web application modeled after a CLI to present my web developement portfolio.
+A web application modeled after a CLI to present Austin Machin Green's web developement portfolio.
 
-![Sample images]()
+![screen shot one](../assets/screen_shot_1.png?raw=true)
+![screen shot two](../assets/screen_shot_2.png?raw=true)
 
 ## Tech Stack
 
-**Frontend** - React\*\*
-**Styling** - CSS Modules\*\*
-**Deployment** - [Vercel](https://vercel.com/greenaustin2/sfh-mern)
+**Frontend** - ![react logo](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+**Styling** - ![css3 logo](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+**Deployment** - ![vercel logo](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 
 ## Reflection
 
-This was a simple project designed to tastefully and efficiently present my web developement portfolio to future employers. Initially I had planned to model my website after common web developement portfolio templates, but opted for a more unique and self inspired concept.
+This was a simple project designed to tastefully and efficiently present my web developement portfolio.
 
 ## Running Locally
 
