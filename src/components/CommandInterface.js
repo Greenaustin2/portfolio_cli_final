@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import ProcessCommandComponent from "./ProcessCommandComponent";
+import ProcessCommand from "./ProcessCommand";
 import useKeyDown from "../hooks/useKeyDown";
-import "../css/gpt.css";
+import "../css/commandInterface.css";
 
 const CommandInterface = () => {
   const [inputValue, setInputValue] = useState("");
@@ -12,8 +12,10 @@ const CommandInterface = () => {
   const inputRef = useRef(null);
   const autoScroll = useRef(null);
 
+  //History index variable initialization
   var index = history.length + 1;
 
+  //Scroll through command history on up-arrow keypress
   const historyUp = () => {
     setHistoryIndex((prevCount) => {
       if (prevCount >= 1) {
@@ -24,6 +26,7 @@ const CommandInterface = () => {
     });
   };
 
+  //Scroll through command history on down-arrow keypress
   const historyDown = () => {
     setHistoryIndex((prevCount) => {
       if (prevCount < history.length) {
@@ -35,21 +38,10 @@ const CommandInterface = () => {
     });
   };
 
-  useKeyDown("ArrowUp", historyUp, inputValue);
-  useKeyDown("ArrowDown", historyDown, inputValue);
-
   //Ensures commands and responses are in view via auto-scroll to bottom of content
   const scrollToBottom = () => {
     autoScroll.current?.scrollIntoView({ behavior: "smooth" });
   };
-
-  useEffect(() => {
-    scrollToBottom();
-  }, [output]);
-
-  useEffect(() => {
-    setInputValue(history[historyIndex]);
-  }, [historyIndex]);
 
   //Clears the terminal
   const clear = () => {
@@ -72,24 +64,16 @@ const CommandInterface = () => {
 
     // Process the command and retrieve the data
     const commandOutput = (
-      <ProcessCommandComponent
-        inputValue={inputValue}
-        clear={clear}
-        contact={contact}
-      />
+      <ProcessCommand inputValue={inputValue} clear={clear} contact={contact} />
     );
-
     // Update command history
     setHistory([...history, inputValue]);
-
+    // Update history index
     setHistoryIndex(index);
-
     // Update output with command and response
     setOutput([...output, { command: inputValue, response: commandOutput }]);
-
     // Clear the input field
     setInputValue("");
-
     // Reset input focus
     inputRef.current.focus();
   };
@@ -98,9 +82,17 @@ const CommandInterface = () => {
   const onBlur = (e) => {
     e.target.focus();
   };
-  // const onMouseDown = (event) => {
-  //   event.preventDefault();
-  // };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [output]);
+
+  useEffect(() => {
+    setInputValue(history[historyIndex]);
+  }, [historyIndex]);
+
+  useKeyDown("ArrowUp", historyUp, inputValue);
+  useKeyDown("ArrowDown", historyDown, inputValue);
 
   return (
     <div className="command-interface">

@@ -1,21 +1,14 @@
 import "../../css/command.css";
+import "../../css/about.css";
 import portrait from "../../images/portrait.png";
+import Social from "./Social";
 
 const About = () => {
   return (
     <div className="command">
       <h3>About</h3>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "2",
-          gridTemplateRows: "1",
-          width: "80%",
-        }}
-      >
-        <div
-          style={{ gridColumn: 1, gridRow: 1, width: "80%", margin: "auto 0" }}
-        >
+      <div className="aboutGrid">
+        <div className="aboutLeft">
           <p>
             I am <em style={{ color: "#00eeff" }}>Austin Machin Green</em>, a
             full-stack <b>web developer</b> and <b>programmer</b> based in NYC.
@@ -32,16 +25,13 @@ const About = () => {
             frequenting jazz clubs in the village, sonic exploration with
             synthesizers, documentary film, and exploring New York City by bike.
           </p>
+          <Social />
         </div>
-        <div style={{ gridColumn: "1fr 1fr", gridRow: 1 }}>
-          <img src={portrait} alt="self portrait" style={{ width: "80%" }} />
+        <div className="aboutRight">
+          <img src={portrait} alt="self portrait" className="selfPortrait" />
         </div>
 
-        {/* prettier-ignore */}
-
-        <pre>
-                                                                                                                                                                                                                                                 
-      </pre>
+        <pre></pre>
       </div>
     </div>
   );

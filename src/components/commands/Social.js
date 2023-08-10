@@ -8,7 +8,7 @@ import linkedIn from "../../images/icons/linkedIn.png";
 const Social = () => {
   return (
     <div className="command">
-      <h3>Social</h3>
+      {/* <h3>Social</h3> */}
       <div className="socialContainer">
         <ExternalLink href="https://github.com/Greenaustin2">
           <img src={github} alt="instagram logo" className="socialImage" />{" "}

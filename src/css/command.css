@@ -35,27 +35,13 @@ table {
 table,
 th,
 td {
-  /* border: 0.5px solid white; */
   padding: 5px;
-  /* border-style: dashed; */
   border-collapse: collapse;
 }
 
-th,
-.projectHeader {
+th {
   font-style: italics;
-  /* font-size: 0.8rem; */
-
   color: #00eeff;
-}
-
-.projectHeader {
-  margin-left: 20px;
-}
-
-.portfolioScreenshot {
-  width: 70%;
-  margin-left: 20px;
 }
 
 .command {

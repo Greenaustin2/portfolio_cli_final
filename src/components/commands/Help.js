@@ -7,7 +7,6 @@ const Help = () => {
     help: "list of available commands",
     portfolio: "recent projects",
     skills: "list of relevant skills",
-    social: "view my social accounts",
     resume: "employment history",
     whoami: "who are you?",
   };

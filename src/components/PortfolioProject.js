@@ -1,5 +1,6 @@
 import { ExternalLink } from "react-external-link";
-import "../css/command.css";
+// import "../css/command.css";
+import "../css/portfolioProject.css";
 
 const PortfolioProject = ({
   title,
@@ -28,7 +29,9 @@ const PortfolioProject = ({
       </p>
       <br />
       <ExternalLink href={repo}>
-        <span style={{ marginLeft: "20px" }}>github repo</span>
+        <span style={{ marginLeft: "20px" }}>
+          <i className="devicon-github-original githubLogo"></i>
+        </span>
       </ExternalLink>
       <hr style={{ width: "80%", marginLeft: "20px" }}></hr>
     </>

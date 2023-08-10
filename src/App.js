@@ -1,4 +1,5 @@
 import React from "react";
+import Clock from "./components/Clock";
 import CommandInterface from "./components/CommandInterface";
 import header from "./images/header.png";
 import "./css/main.css";
@@ -11,11 +12,10 @@ const App = () => {
 
   return (
     <div onMouseDownCapture={onMouseDownHandler}>
-      {/* prettier-ignore */}
-      <img className="header" src={header} alt="AMG"/>
+      <img className="header" src={header} alt="AMG" />
       <p>enter 'help' for a list of available commands</p>
       <CommandInterface />
-      {/* <Clock /> */}
+      <Clock />
     </div>
   );
 };

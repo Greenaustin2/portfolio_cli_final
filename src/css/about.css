@@ -1,0 +1,22 @@
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1;
+  width: 80%;
+}
+
+.aboutLeft {
+  grid-column: 1;
+  grid-row: 1;
+  width: 80%;
+  margin: auto 0;
+}
+
+.aboutRight {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.selfPortrait {
+  width: 80%;
+}
