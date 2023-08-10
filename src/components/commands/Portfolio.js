@@ -20,33 +20,33 @@ const Portfolio = () => {
     },
     gb: {
       title: "graphic-balance.tv",
-      url: "http://www.graphic-balance.tv/",
-      repo: "https://github.com/Greenaustin2/sfh_mern.git",
+      url: "https://graphic-balance-3bf05d57cb18.herokuapp.com/",
+      repo: "https://github.com/Greenaustin2/graphicBalance_MERN.git",
       image: gb,
       alt: "graphic balance website",
       description:
         "An alternative streaming platform with randomly generated content",
       tech: "react, react-router, node.js, express, mongodb, css, heroku",
     },
+    gbd: {
+      title: "Random Youtube Downloader",
+      url: "https://github.com/Greenaustin2/GB_YT_Downloader_CLI.git",
+      repo: "https://github.com/Greenaustin2/GB_YT_Downloader_CLI.git",
+      image: gbd,
+      alt: "random youtube downloader",
+      description:
+        "A program designed for content collection for archivalist documentarian",
+      tech: "python, youtube data api, pytube",
+    },
     glh: {
       title: "Location History Visualizer",
-      url: "https://github.com/Greenaustin2/google_location",
-      repo: "https://github.com/Greenaustin2/google_location",
+      url: "https://github.com/Greenaustin2/google_location.git",
+      repo: "https://github.com/Greenaustin2/google_location.git",
       image: glh,
       alt: "location history visualizer",
       description:
         "A program that translates location history data into a line drawing",
       tech: "python, tkinter, turtle",
-    },
-    gbd: {
-      title: "Random Youtube Downloader",
-      url: "https://github.com/Greenaustin2/graphic_balance_api",
-      repo: "https://github.com/Greenaustin2/graphic_balance_api",
-      image: gbd,
-      alt: "random youtube downloader",
-      description:
-        "A program designed for content collection for archivalist documentarian",
-      tech: "python, os, webbrowser, shutil, pytube, youtube data api",
     },
   };
 

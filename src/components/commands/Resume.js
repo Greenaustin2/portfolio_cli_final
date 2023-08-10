@@ -52,10 +52,7 @@ const Resume = () => {
         style={customStyles}
       >
         <div className="container">
-          <iframe
-            className="pdf"
-            src="http://localhost:3000/resume.pdf"
-          ></iframe>
+          <iframe title="resume" className="pdf" src="resume.pdf"></iframe>
         </div>
       </Modal>
     </div>
