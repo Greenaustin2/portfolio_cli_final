@@ -10,7 +10,9 @@ A web application modeled after a CLI to present Austin Machin Green's web devel
 ## Tech Stack
 
 **Frontend** - ![react logo](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
 **Styling** - ![css3 logo](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
 **Deployment** - ![vercel logo](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 
 ## Reflection

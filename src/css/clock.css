@@ -1,5 +1,5 @@
 .clock {
-  margin: auto;
+  /* margin: auto; */
   position: absolute;
   text-align: right;
   top: 20px;
@@ -10,4 +10,5 @@
   font-family: "Menlo", "sans-serif";
   color: #f1c500;
   font-size: 15px;
+  height: fit-content;
 }

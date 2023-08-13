@@ -12,7 +12,7 @@ function Clock() {
     return () => clearInterval(intervalId);
   }, []);
 
-  return <p className="clock">{date.toLocaleTimeString()}</p>;
+  return <div className="clock">{date.toLocaleTimeString()}</div>;
 }
 
 export default Clock;
