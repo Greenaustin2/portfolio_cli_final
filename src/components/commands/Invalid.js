@@ -1,11 +1,11 @@
 import "../../css/command.css";
 
-const About = () => {
+const Invalid = ({ inputValue }) => {
   return (
     <div className="command">
-      <h4 id="invalid">invalid command</h4>
+      <p id="invalid">command not valid: {inputValue}</p>
     </div>
   );
 };
 
-export default About;
+export default Invalid;

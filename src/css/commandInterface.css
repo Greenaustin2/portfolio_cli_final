@@ -19,8 +19,8 @@ body {
   font-family: "Menlo", sans-serif;
   font-size: 0.8rem;
   background-color: transparent;
-  border: red;
   outline: none;
+  border: none;
   color: white;
 }
 

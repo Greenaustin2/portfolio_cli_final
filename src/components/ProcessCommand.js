@@ -19,10 +19,8 @@ const processCommand = ({ inputValue, clear, contact }) => {
     return <Commands.Skills />;
   } else if (inputValue === "whoami") {
     return <Commands.Whoami />;
-  } else if (inputValue === "whoami") {
-    return <Commands.Whoami />;
   } else {
-    return <Commands.Invalid />;
+    return <Commands.Invalid inputValue={inputValue} />;
   }
 };
 

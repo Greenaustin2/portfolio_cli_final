@@ -8,7 +8,6 @@ const CommandInterface = () => {
   const [history, setHistory] = useState([]);
   const [historyIndex, setHistoryIndex] = useState(0);
   const [output, setOutput] = useState([]);
-
   const inputRef = useRef(null);
   const autoScroll = useRef(null);
 
@@ -56,12 +55,17 @@ const CommandInterface = () => {
   };
 
   const handleInputChange = (event) => {
-    setInputValue(event.target.value);
+    setInputValue(event.target.value.toLowerCase());
+  };
+
+  const handleFocus = () => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
   };
 
   const handleCommandSubmit = (event) => {
     event.preventDefault();
-
     // Process the command and retrieve the data
     const commandOutput = (
       <ProcessCommand inputValue={inputValue} clear={clear} contact={contact} />
@@ -101,7 +105,7 @@ const CommandInterface = () => {
       <div className="command-interface__output">
         {output.map((item, index) => (
           <div key={index}>
-            <span className="command-interface__prompt">$</span>
+            <span className="command-interface__prompt">~$</span>
             <span className="command-interface__command">{item.command}</span>
             <br />
             <div>{item.response}</div>
@@ -109,7 +113,7 @@ const CommandInterface = () => {
         ))}
         <div className="command-interface__input-container">
           <form onSubmit={handleCommandSubmit}>
-            <span className="command-interface__prompt">$</span>
+            <span className="command-interface__prompt">~$</span>
             {/* <span className="command-interface__static-input">{inputValue}</span> */}
             <input
               type="text"
@@ -119,6 +123,10 @@ const CommandInterface = () => {
               autoFocus
               ref={inputRef}
               onBlur={onBlur}
+              onClick={(e) => {
+                e.stopPropagation();
+                handleFocus();
+              }}
             />
           </form>
         </div>
