@@ -9,3 +9,13 @@
   flex-wrap: wrap;
   width: 80%;
 }
+
+@media screen and (max-width: 700px) {
+  .skillsContainer {
+    width: 100%;
+  }
+  .skillIcon {
+    font-size: 50px;
+    padding: 30px;
+  }
+}

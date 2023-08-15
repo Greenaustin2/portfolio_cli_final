@@ -20,3 +20,19 @@
 .selfPortrait {
   width: 80%;
 }
+
+@media screen and (max-width: 700px) {
+  .aboutGrid {
+    display: block;
+    width: 80%;
+  }
+
+  .aboutLeft {
+    width: 80%;
+    margin: auto 0;
+  }
+
+  .selfPortrait {
+    width: 80%;
+  }
+}

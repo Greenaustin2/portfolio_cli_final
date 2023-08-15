@@ -59,3 +59,9 @@ th {
 #help {
   width: 50%;
 }
+
+@media screen and (max-width: 700px) {
+  #help {
+    width: 100%;
+  }
+}

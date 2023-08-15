@@ -19,7 +19,7 @@ body {
   font-family: "Menlo", sans-serif;
   font-size: 0.8rem;
   background-color: transparent;
-  border: none;
+  border: red;
   outline: none;
   color: white;
 }

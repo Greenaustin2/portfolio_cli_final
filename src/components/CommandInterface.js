@@ -83,10 +83,12 @@ const CommandInterface = () => {
     e.target.focus();
   };
 
+  //auto scrolls to bottom of screen
   useEffect(() => {
     scrollToBottom();
   }, [output]);
 
+  //sets text input value to the current historyIndex value (command history)
   useEffect(() => {
     setInputValue(history[historyIndex]);
   }, [historyIndex]);

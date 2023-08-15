@@ -11,3 +11,15 @@
 .githubLogo {
   font-size: 20px;
 }
+
+@media screen and (max-width: 700px) {
+  .portfolioScreenshot {
+    width: 98%;
+    margin: auto;
+    margin-left: 20px;
+  }
+
+  .projectHeader {
+    font-size: 0.75rem;
+  }
+}
