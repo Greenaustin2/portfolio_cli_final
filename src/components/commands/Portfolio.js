@@ -4,11 +4,22 @@ import sixfh from "../../images/6fh.png";
 import gb from "../../images/gb.png";
 import glh from "../../images/glh.png";
 import gbd from "../../images/gbd.png";
+import gbsql from "../../images/gbsql.jpg";
 import { ExternalLink } from "react-external-link";
 
 const Portfolio = () => {
   //Projects Object
   const projects = {
+    gbsql: {
+      title: "SQL Video Archive",
+      url: "https://github.com/Greenaustin2/mysql_archive",
+      repo: "https://github.com/Greenaustin2/mysql_archive",
+      image: gbsql,
+      alt: "sql video archive database",
+      description:
+        "A relational database used to tag and catalogue a local folder structure of video files",
+      tech: "python, mysql",
+    },
     sixfh: {
       title: "sixfingerhand.xyz",
       url: "http://www.sixfingerhand.xyz/",
