@@ -51,7 +51,7 @@ const CommandInterface = () => {
 
   //Opens email prompt in new tab
   const contact = () => {
-    window.open("mailto:greenaustin2@gmail.com");
+    window.location.href = "mailto:greenaustin2@gmail.com";
   };
 
   const handleInputChange = (event) => {

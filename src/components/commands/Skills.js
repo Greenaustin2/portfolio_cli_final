@@ -1,6 +1,5 @@
 // import "../../css/command.css";
 import "../../css/skills.css";
-import { ExternalLink } from "react-external-link";
 
 const Skills = () => {
   return (
@@ -17,6 +16,7 @@ const Skills = () => {
         <i class="devicon-express-original skillIcon"></i>
         <i class="devicon-mongodb-plain-wordmark skillIcon"></i>
         <i class="devicon-python-plain skillIcon"></i>
+        <i class="devicon-mysql-plain-wordmark skillIcon"></i>
         <i class="devicon-heroku-original skillIcon"></i>
         <i class="devicon-git-plain skillIcon"></i>
         <i class="devicon-github-original skillIcon"></i>
