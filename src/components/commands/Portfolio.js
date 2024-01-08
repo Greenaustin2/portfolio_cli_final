@@ -15,7 +15,7 @@ const Portfolio = () => {
       url: "https://github.com/Greenaustin2/mysql_archive",
       repo: "https://github.com/Greenaustin2/mysql_archive",
       image: gbsql,
-      alt: "sql video archive database",
+      alt: "sql video archival database",
       description:
         "A relational database used to tag and catalogue a local folder structure of video files",
       tech: "python, mysql",
